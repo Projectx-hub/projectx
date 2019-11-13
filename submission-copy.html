@@ -1,15 +1,17 @@
 ---
 layout: default
-title: Submission
+title: Call for Website Images
 image:
 ---
+<!--
 <section id="countdown-timer-panel">
     <iframe style="float:right;" src="https://free.timeanddate.com/countdown/i6yhbdwz/n761/cf100/cm0/cu4/ct0/cs0/ca0/cr0/ss0/cac000/cpc000/pcfff/tcfff/fs100/szw320/szh135/tatTime%20left%20to%20Event%20in/tac000/tptTime%20since%20Event%20started%20in/tpc000/mac000/mpc000/iso2019-10-09T00:00:00" allowTransparency="true" frameborder="0" width="320" height="135"></iframe>
 </section>
+-->
 
 <section id="heading-panel" class="mast section-padding--double">
     <div class="grid-small">
-        <h2>Share Something With Us</h2>
+        <h2>Call for Website Images</h2>
     </div>
 </section>
 
@@ -23,7 +25,7 @@ image:
 
 
             <form id="submission-form" class="form"
-                action="{{ site.share_something_form_action }}"
+                action="{{ site.call_for_website_images }}"
                 method="POST">
                 <div class="form__subcontainer">
                     <div>
@@ -38,25 +40,28 @@ image:
 
                 <div class="form__subcontainer">
                     <div>
-                        <label for="form-project-name">Project Name</label>
-                        <input type="text" name="project-name" id="form-project-name" required>
+                        <label for="form-image-title">Image Title</label>
+                        <input type="text" name="project-name" id="form-image-title" required>
                     </div>
                     <div>
-                        <label for="form-project-link">Project Link</label>
-                        <input type="url" name="project-link" id="form-project-link"
+                        <label for="form-project-link">Link to Image</label>
+                        <input type="url" name="project-link" id="form-image-link"
                             placeholder="https://yourprojectlink.com" required>
 
                     </div>
                 </div>
 
                 <div>
-                    <label for="form-project-statement">Project Statement</label>
-                    <textarea name="project-statement" id="form-project-statement" rows="4" required></textarea>
+                    <label for="form-website-statement">Suggested Placement (optional)</label>
+                    <select name="form-preferred-sport">
+                        <option value="contact">Reach Out Popup Modal</option>
+                        <option value="style-gude">Stule Guide Feature Image</option>
+                    </select>                
                 </div>
 
                 <div>
-                    <label for="form-contributor-bio">About You</label>
-                    <textarea name="contributor-bio" id="form-contributor-bio" rows="4" required></textarea>
+                    <label for="form-contributor-bio">Image Credit Details</label>
+                    <textarea name="contributor-bio" id="form-image-credits" rows="4" required></textarea>
                 </div>
 
 
